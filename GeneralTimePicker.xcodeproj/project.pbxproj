@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EA92A832113F59600A153C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A822113F59600A153C5 /* AppDelegate.m */; };
+		5EA92A862113F59600A153C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A852113F59600A153C5 /* ViewController.m */; };
+		5EA92A892113F59600A153C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA92A872113F59600A153C5 /* Main.storyboard */; };
+		5EA92A8C2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A8A2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld */; };
+		5EA92A8E2113F59700A153C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA92A8D2113F59700A153C5 /* Assets.xcassets */; };
+		5EA92A912113F59700A153C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA92A8F2113F59700A153C5 /* LaunchScreen.storyboard */; };
+		5EA92A942113F59700A153C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A932113F59700A153C5 /* main.m */; };
+		5EA92A9E2113F59700A153C5 /* GeneralTimePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A9D2113F59700A153C5 /* GeneralTimePickerTests.m */; };
+		5EA92AA92113F59700A153C5 /* GeneralTimePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92AA82113F59700A153C5 /* GeneralTimePickerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EA92A9A2113F59700A153C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EA92A762113F59600A153C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EA92A7D2113F59600A153C5;
+			remoteInfo = GeneralTimePicker;
+		};
+		5EA92AA52113F59700A153C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EA92A762113F59600A153C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EA92A7D2113F59600A153C5;
+			remoteInfo = GeneralTimePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EA92A7E2113F59600A153C5 /* GeneralTimePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralTimePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA92A812113F59600A153C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5EA92A822113F59600A153C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5EA92A842113F59600A153C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5EA92A852113F59600A153C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5EA92A882113F59600A153C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EA92A8B2113F59600A153C5 /* GeneralTimePicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeneralTimePicker.xcdatamodel; sourceTree = "<group>"; };
+		5EA92A8D2113F59700A153C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EA92A902113F59700A153C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EA92A922113F59700A153C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA92A932113F59700A153C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EA92A992113F59700A153C5 /* GeneralTimePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralTimePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA92A9D2113F59700A153C5 /* GeneralTimePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralTimePickerTests.m; sourceTree = "<group>"; };
+		5EA92A9F2113F59700A153C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA92AA42113F59700A153C5 /* GeneralTimePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralTimePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA92AA82113F59700A153C5 /* GeneralTimePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralTimePickerUITests.m; sourceTree = "<group>"; };
+		5EA92AAA2113F59700A153C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EA92A7B2113F59600A153C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA92A962113F59700A153C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA92AA12113F59700A153C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EA92A752113F59600A153C5 = {
+			isa = PBXGroup;
+			children = (
+				5EA92A802113F59600A153C5 /* GeneralTimePicker-Ex */,
+				5EA92A9C2113F59700A153C5 /* GeneralTimePickerTests */,
+				5EA92AA72113F59700A153C5 /* GeneralTimePickerUITests */,
+				5EA92A7F2113F59600A153C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EA92A7F2113F59600A153C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EA92A7E2113F59600A153C5 /* GeneralTimePicker.app */,
+				5EA92A992113F59700A153C5 /* GeneralTimePickerTests.xctest */,
+				5EA92AA42113F59700A153C5 /* GeneralTimePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA92A802113F59600A153C5 /* GeneralTimePicker-Ex */ = {
+			isa = PBXGroup;
+			children = (
+				5EA92A812113F59600A153C5 /* AppDelegate.h */,
+				5EA92A822113F59600A153C5 /* AppDelegate.m */,
+				5EA92A842113F59600A153C5 /* ViewController.h */,
+				5EA92A852113F59600A153C5 /* ViewController.m */,
+				5EA92A872113F59600A153C5 /* Main.storyboard */,
+				5EA92A8D2113F59700A153C5 /* Assets.xcassets */,
+				5EA92A8F2113F59700A153C5 /* LaunchScreen.storyboard */,
+				5EA92A922113F59700A153C5 /* Info.plist */,
+				5EA92A932113F59700A153C5 /* main.m */,
+				5EA92A8A2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld */,
+			);
+			path = "GeneralTimePicker-Ex";
+			sourceTree = "<group>";
+		};
+		5EA92A9C2113F59700A153C5 /* GeneralTimePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EA92A9D2113F59700A153C5 /* GeneralTimePickerTests.m */,
+				5EA92A9F2113F59700A153C5 /* Info.plist */,
+			);
+			path = GeneralTimePickerTests;
+			sourceTree = "<group>";
+		};
+		5EA92AA72113F59700A153C5 /* GeneralTimePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5EA92AA82113F59700A153C5 /* GeneralTimePickerUITests.m */,
+				5EA92AAA2113F59700A153C5 /* Info.plist */,
+			);
+			path = GeneralTimePickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EA92A7D2113F59600A153C5 /* GeneralTimePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA92AAD2113F59700A153C5 /* Build configuration list for PBXNativeTarget "GeneralTimePicker" */;
+			buildPhases = (
+				5EA92A7A2113F59600A153C5 /* Sources */,
+				5EA92A7B2113F59600A153C5 /* Frameworks */,
+				5EA92A7C2113F59600A153C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneralTimePicker;
+			productName = GeneralTimePicker;
+			productReference = 5EA92A7E2113F59600A153C5 /* GeneralTimePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EA92A982113F59700A153C5 /* GeneralTimePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA92AB02113F59700A153C5 /* Build configuration list for PBXNativeTarget "GeneralTimePickerTests" */;
+			buildPhases = (
+				5EA92A952113F59700A153C5 /* Sources */,
+				5EA92A962113F59700A153C5 /* Frameworks */,
+				5EA92A972113F59700A153C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EA92A9B2113F59700A153C5 /* PBXTargetDependency */,
+			);
+			name = GeneralTimePickerTests;
+			productName = GeneralTimePickerTests;
+			productReference = 5EA92A992113F59700A153C5 /* GeneralTimePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EA92AA32113F59700A153C5 /* GeneralTimePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA92AB32113F59700A153C5 /* Build configuration list for PBXNativeTarget "GeneralTimePickerUITests" */;
+			buildPhases = (
+				5EA92AA02113F59700A153C5 /* Sources */,
+				5EA92AA12113F59700A153C5 /* Frameworks */,
+				5EA92AA22113F59700A153C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EA92AA62113F59700A153C5 /* PBXTargetDependency */,
+			);
+			name = GeneralTimePickerUITests;
+			productName = GeneralTimePickerUITests;
+			productReference = 5EA92AA42113F59700A153C5 /* GeneralTimePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EA92A762113F59600A153C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Xush;
+				TargetAttributes = {
+					5EA92A7D2113F59600A153C5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5EA92A982113F59700A153C5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5EA92A7D2113F59600A153C5;
+					};
+					5EA92AA32113F59700A153C5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5EA92A7D2113F59600A153C5;
+					};
+				};
+			};
+			buildConfigurationList = 5EA92A792113F59600A153C5 /* Build configuration list for PBXProject "GeneralTimePicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EA92A752113F59600A153C5;
+			productRefGroup = 5EA92A7F2113F59600A153C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EA92A7D2113F59600A153C5 /* GeneralTimePicker */,
+				5EA92A982113F59700A153C5 /* GeneralTimePickerTests */,
+				5EA92AA32113F59700A153C5 /* GeneralTimePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EA92A7C2113F59600A153C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA92A912113F59700A153C5 /* LaunchScreen.storyboard in Resources */,
+				5EA92A8E2113F59700A153C5 /* Assets.xcassets in Resources */,
+				5EA92A892113F59600A153C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA92A972113F59700A153C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA92AA22113F59700A153C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EA92A7A2113F59600A153C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA92A8C2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld in Sources */,
+				5EA92A862113F59600A153C5 /* ViewController.m in Sources */,
+				5EA92A942113F59700A153C5 /* main.m in Sources */,
+				5EA92A832113F59600A153C5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA92A952113F59700A153C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA92A9E2113F59700A153C5 /* GeneralTimePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA92AA02113F59700A153C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA92AA92113F59700A153C5 /* GeneralTimePickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EA92A9B2113F59700A153C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EA92A7D2113F59600A153C5 /* GeneralTimePicker */;
+			targetProxy = 5EA92A9A2113F59700A153C5 /* PBXContainerItemProxy */;
+		};
+		5EA92AA62113F59700A153C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EA92A7D2113F59600A153C5 /* GeneralTimePicker */;
+			targetProxy = 5EA92AA52113F59700A153C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EA92A872113F59600A153C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA92A882113F59600A153C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EA92A8F2113F59700A153C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA92A902113F59700A153C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EA92AAB2113F59700A153C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EA92AAC2113F59700A153C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EA92AAE2113F59700A153C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = "$(SRCROOT)/GeneralTimePicker-Ex/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.GeneralTimePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EA92AAF2113F59700A153C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = "$(SRCROOT)/GeneralTimePicker-Ex/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.GeneralTimePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5EA92AB12113F59700A153C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = GeneralTimePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.GeneralTimePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneralTimePicker.app/GeneralTimePicker";
+			};
+			name = Debug;
+		};
+		5EA92AB22113F59700A153C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = GeneralTimePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.GeneralTimePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneralTimePicker.app/GeneralTimePicker";
+			};
+			name = Release;
+		};
+		5EA92AB42113F59700A153C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = GeneralTimePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.GeneralTimePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeneralTimePicker;
+			};
+			name = Debug;
+		};
+		5EA92AB52113F59700A153C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXE5KCM6E6;
+				INFOPLIST_FILE = GeneralTimePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Approach.GeneralTimePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeneralTimePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EA92A792113F59600A153C5 /* Build configuration list for PBXProject "GeneralTimePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA92AAB2113F59700A153C5 /* Debug */,
+				5EA92AAC2113F59700A153C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA92AAD2113F59700A153C5 /* Build configuration list for PBXNativeTarget "GeneralTimePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA92AAE2113F59700A153C5 /* Debug */,
+				5EA92AAF2113F59700A153C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA92AB02113F59700A153C5 /* Build configuration list for PBXNativeTarget "GeneralTimePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA92AB12113F59700A153C5 /* Debug */,
+				5EA92AB22113F59700A153C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA92AB32113F59700A153C5 /* Build configuration list for PBXNativeTarget "GeneralTimePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA92AB42113F59700A153C5 /* Debug */,
+				5EA92AB52113F59700A153C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5EA92A8A2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5EA92A8B2113F59600A153C5 /* GeneralTimePicker.xcdatamodel */,
+			);
+			currentVersion = 5EA92A8B2113F59600A153C5 /* GeneralTimePicker.xcdatamodel */;
+			path = GeneralTimePicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5EA92A762113F59600A153C5 /* Project object */;
+}
