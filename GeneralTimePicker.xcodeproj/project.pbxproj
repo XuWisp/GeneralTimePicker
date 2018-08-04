@@ -16,6 +16,8 @@
 		5EA92A942113F59700A153C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A932113F59700A153C5 /* main.m */; };
 		5EA92A9E2113F59700A153C5 /* GeneralTimePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92A9D2113F59700A153C5 /* GeneralTimePickerTests.m */; };
 		5EA92AA92113F59700A153C5 /* GeneralTimePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92AA82113F59700A153C5 /* GeneralTimePickerUITests.m */; };
+		5EA92B3B2113FB9600A153C5 /* TimeZonePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92B3A2113FB9500A153C5 /* TimeZonePicker.m */; };
+		5EA92B3E2114246600A153C5 /* DemoMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA92B3D2114246600A153C5 /* DemoMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		5EA92AA42113F59700A153C5 /* GeneralTimePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralTimePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA92AA82113F59700A153C5 /* GeneralTimePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralTimePickerUITests.m; sourceTree = "<group>"; };
 		5EA92AAA2113F59700A153C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA92B392113FB9500A153C5 /* TimeZonePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeZonePicker.h; sourceTree = "<group>"; };
+		5EA92B3A2113FB9500A153C5 /* TimeZonePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeZonePicker.m; sourceTree = "<group>"; };
+		5EA92B3C2114246600A153C5 /* DemoMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoMainView.h; sourceTree = "<group>"; };
+		5EA92B3D2114246600A153C5 /* DemoMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		5EA92A752113F59600A153C5 = {
 			isa = PBXGroup;
 			children = (
+				5EA92B382113FB5500A153C5 /* GeneralTimePicker */,
 				5EA92A802113F59600A153C5 /* GeneralTimePicker-Ex */,
 				5EA92A9C2113F59700A153C5 /* GeneralTimePickerTests */,
 				5EA92AA72113F59700A153C5 /* GeneralTimePickerUITests */,
@@ -113,6 +120,8 @@
 				5EA92A922113F59700A153C5 /* Info.plist */,
 				5EA92A932113F59700A153C5 /* main.m */,
 				5EA92A8A2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld */,
+				5EA92B3C2114246600A153C5 /* DemoMainView.h */,
+				5EA92B3D2114246600A153C5 /* DemoMainView.m */,
 			);
 			path = "GeneralTimePicker-Ex";
 			sourceTree = "<group>";
@@ -133,6 +142,15 @@
 				5EA92AAA2113F59700A153C5 /* Info.plist */,
 			);
 			path = GeneralTimePickerUITests;
+			sourceTree = "<group>";
+		};
+		5EA92B382113FB5500A153C5 /* GeneralTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				5EA92B392113FB9500A153C5 /* TimeZonePicker.h */,
+				5EA92B3A2113FB9500A153C5 /* TimeZonePicker.m */,
+			);
+			path = GeneralTimePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA92B3B2113FB9600A153C5 /* TimeZonePicker.m in Sources */,
 				5EA92A8C2113F59600A153C5 /* GeneralTimePicker.xcdatamodeld in Sources */,
 				5EA92A862113F59600A153C5 /* ViewController.m in Sources */,
 				5EA92A942113F59700A153C5 /* main.m in Sources */,
+				5EA92B3E2114246600A153C5 /* DemoMainView.m in Sources */,
 				5EA92A832113F59600A153C5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
