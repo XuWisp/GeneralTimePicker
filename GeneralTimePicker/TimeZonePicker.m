@@ -14,7 +14,6 @@
 }
 
 @property (nonatomic, strong) NSCalendar *calendar;
-@property (nonatomic) BOOL showOnlyValidDates;
 
 @end
 
@@ -24,13 +23,10 @@
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    
     if (!self) {
         return nil;
     }
-    
     self.minDate = [NSDate dateWithTimeIntervalSince1970:0];
-    
     [self commonInit];
     
     return self;
@@ -104,7 +100,7 @@
                                     toDate:date
                                    options:0];
     
-    NSInteger hour = ([components hour]-10)*2; //+ 24 * (INT16_MAX / 120);
+    NSInteger hour = ([components hour]-self.minDayTime)*2; //+ 24 * (INT16_MAX / 120);
     NSInteger minute = [components minute]/30;
     NSInteger day = [components day];
     
@@ -166,7 +162,11 @@
     if (component == 0) {
         return nDays;
     } else if (component == 1) {
-        return (self.maxDayTime-self.minDayTime)/self.timeInterval;
+        if (self.timeInterval) {
+            return (self.maxDayTime-self.minDayTime)/self.timeInterval;
+        }else {
+            return (self.maxDayTime-self.minDayTime);
+        }
     } else {
         return INT16_MAX;
     }
@@ -227,9 +227,23 @@
     }
     else if (component == 1) // Hour
     {
-//        int max = (int)[self.calendar maximumRangeOfUnit:NSCalendarUnitHour].length;
         float time = self.minDayTime+self.timeInterval*row;
+        
+        NSInteger day = [pickerView selectedRowInComponent:0];
+
+        if ([self selectedIsTodayByDayRow:day] && // 选中的是今天
+            (self.showOnlyValidDates)) {
+            NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            NSDateComponents *components = [gregorian components:NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self.minDate];
+            float mintime = components.hour+components.minute/60+0.5;
+            if (mintime>time) {
+                lblDate.hidden = YES;
+            }
+        }else {
+//            lblDate.backgroundColor = [UIColor clearColor];
+        }
         [lblDate setText:[NSString stringWithFormat:@"%@-%@", [self timeStrFromFloat:time], [self timeStrFromFloat:time+self.timeInterval]]]; // 02d = pad with leading zeros to 2 digits
+//        int max = (int)[self.calendar maximumRangeOfUnit:NSCalendarUnitHour].length;
 //        [lblDate setText:[NSString stringWithFormat:@"%02ld:%02ld-%02ld:%02ld",(long)(row % max)/2+10, row%2*30, (long)((row+1) % max)/2+10, (row+1)%2*30]]; // 02d = pad with leading zeros to 2 digits
         lblDate.textAlignment = NSTextAlignmentCenter;
     }
@@ -243,6 +257,9 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if (component == 0) {
+        [pickerView reloadComponent:1];
+    }
     NSInteger daysFromStart;
     NSDate *chosenDate;
     daysFromStart = [pickerView selectedRowInComponent:0];
@@ -271,7 +288,7 @@
 #pragma mark - other
 
 - (NSInteger)getHourForHalfHour {
-    return [self.picker selectedRowInComponent:1]/2+10;
+    return [self.picker selectedRowInComponent:1]/2+self.minDayTime/1;
     //    NSInteger minite = [self.picker selectedRowInComponent:1]%2*30;
 }
 
@@ -296,6 +313,16 @@
     int hour = timeF;
     int minite = (timeF-hour)*60;
     return [NSString stringWithFormat:@"%02d:%02d", hour, minite];
+}
+
+// 选中的是今天
+- (BOOL)selectedIsTodayByDayRow:(NSInteger)row {
+    NSDate *aDate = [NSDate dateWithTimeInterval:row*24*60*60 sinceDate:self.minDate];
+    NSDateComponents *components = [self.calendar components:(NSCalendarUnitEra|NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay) fromDate:[NSDate date]];
+    NSDate *today = [self.calendar dateFromComponents:components];
+    components = [self.calendar components:(NSCalendarUnitEra|NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay) fromDate:aDate];
+    NSDate *otherDate = [self.calendar dateFromComponents:components];
+    return [self isSameDay:today date2:otherDate];
 }
 
 @end

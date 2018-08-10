@@ -50,9 +50,10 @@
                                                    maxDate:[NSDate dateWithTimeIntervalSinceNow:7*24*60*60]
                                                    minDate:[NSDate dateWithTimeIntervalSinceNow:60*60]// 最早提货时间要延后1小时
                                         showValidDatesOnly:YES];
+        _timeZonePiker.showOnlyValidDates = YES;
         _timeZonePiker.minDayTime = 10;
         _timeZonePiker.maxDayTime = 20;
-        _timeZonePiker.timeInterval = 1;
+        _timeZonePiker.timeInterval = 0.5;
         _timeZonePiker.backgroundColor = [UIColor whiteColor];
         _timeZonePiker.delegate = self;
      }

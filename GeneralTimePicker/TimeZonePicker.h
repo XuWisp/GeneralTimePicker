@@ -28,6 +28,8 @@
 @property (nonatomic, assign) float maxDayTime;
 @property (nonatomic, assign) float timeInterval;
 
+@property (nonatomic) BOOL showOnlyValidDates;
+
 - (id)initWithFrame:(CGRect)frame maxDate:(NSDate *)maxDate minDate:(NSDate *)minDate showValidDatesOnly:(BOOL)showValidDatesOnly;
 -(void)showDateOnPicker:(NSDate *)date;
 
