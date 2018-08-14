@@ -212,17 +212,15 @@
         components = [self.calendar components:(NSCalendarUnitEra|NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay) fromDate:aDate];
         NSDate *otherDate = [self.calendar dateFromComponents:components];
         
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.locale = [NSLocale currentLocale];
+        formatter.dateFormat = @"MMMd日 E";
         if ([self isSameDay:today date2:otherDate]) {
-            [lblDate setText:@"今天"];
+            formatter.dateFormat = @"MMMd日 今天";
         }else if([self isSameDay:[today dateByAddingTimeInterval:24*3600] date2:otherDate]) {
-            [lblDate setText:@"明天"];
-        } else {
-            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-            formatter.locale = [NSLocale currentLocale];
-            formatter.dateFormat = @"MMMd日 E";
-            
-            [lblDate setText:[formatter stringFromDate:aDate]];
+            formatter.dateFormat = @"MMMd日 明天";
         }
+        [lblDate setText:[formatter stringFromDate:aDate]];
         lblDate.textAlignment = NSTextAlignmentCenter;
     }
     else if (component == 1) // Hour
@@ -230,21 +228,23 @@
         float time = self.minDayTime+self.timeInterval*row;
         
         NSInteger day = [pickerView selectedRowInComponent:0];
-
+        
         if ([self selectedIsTodayByDayRow:day] && // 选中的是今天
             (self.showOnlyValidDates)) {
             NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
             NSDateComponents *components = [gregorian components:NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self.minDate];
-            float mintime = components.hour+components.minute/60+0.5;
-            if (mintime>time) {
+            float mintime = components.hour+components.minute/60.0;
+            if (mintime>=time) {
                 lblDate.hidden = YES;
+            }else {
+                lblDate.hidden = false;
             }
         }else {
-//            lblDate.backgroundColor = [UIColor clearColor];
+            //            lblDate.backgroundColor = [UIColor clearColor];
         }
         [lblDate setText:[NSString stringWithFormat:@"%@-%@", [self timeStrFromFloat:time], [self timeStrFromFloat:time+self.timeInterval]]]; // 02d = pad with leading zeros to 2 digits
-//        int max = (int)[self.calendar maximumRangeOfUnit:NSCalendarUnitHour].length;
-//        [lblDate setText:[NSString stringWithFormat:@"%02ld:%02ld-%02ld:%02ld",(long)(row % max)/2+10, row%2*30, (long)((row+1) % max)/2+10, (row+1)%2*30]]; // 02d = pad with leading zeros to 2 digits
+        //        int max = (int)[self.calendar maximumRangeOfUnit:NSCalendarUnitHour].length;
+        //        [lblDate setText:[NSString stringWithFormat:@"%02ld:%02ld-%02ld:%02ld",(long)(row % max)/2+10, row%2*30, (long)((row+1) % max)/2+10, (row+1)%2*30]]; // 02d = pad with leading zeros to 2 digits
         lblDate.textAlignment = NSTextAlignmentCenter;
     }
     //    else if (component == 2) // Minutes
